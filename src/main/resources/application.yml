@@ -4,3 +4,5 @@ spring:
       LearnSpring
 server:
   port: 8888
+
+logging.level.root: DEBUG

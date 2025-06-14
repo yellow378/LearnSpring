@@ -2,6 +2,15 @@ spring:
   application:
     name:
       LearnSpring
+  datasource:
+    url: jdbc:mysql://localhost:3306/mytest?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 186317
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
 server:
   port: 8888
 

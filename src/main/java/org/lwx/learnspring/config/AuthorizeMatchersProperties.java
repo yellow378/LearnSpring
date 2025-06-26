@@ -13,5 +13,5 @@ public class AuthorizeMatchersProperties {
     /**
      * 放行白名单配置
      */
-    private List<String> permit_urls;
+    public List<String> permit_urls;
 }

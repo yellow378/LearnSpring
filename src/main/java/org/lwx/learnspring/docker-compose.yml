@@ -1,0 +1,8 @@
+services:
+  db:
+    image: mysql:8.4.5
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 186317
+    ports:
+      - "3306:3306"

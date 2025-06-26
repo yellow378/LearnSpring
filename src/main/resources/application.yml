@@ -3,7 +3,7 @@ spring:
     name:
       LearnSpring
   datasource:
-    url: jdbc:mysql://localhost:3306/mytest?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/learn_spring?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
     username: root
     password: 186317
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,5 +13,17 @@ spring:
       minimum-idle: 5
 server:
   port: 8888
+
+# MyBatis
+mybatis:
+  typeAliasesPackage: org.lwx.learnspring.mapper
+  mapperLocations: classpath*:mappers/*Mapper.xml
+
+jwt:
+  key: mykey
+  expire: 720
+authorize:
+  permit-urls:
+    - "/login"
 
 logging.level.root: DEBUG

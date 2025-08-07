@@ -16,6 +16,7 @@
     <description>LearnSpring</description>
     <modules>
         <module>LearnJUC</module>
+        <module>LearnJVM</module>
     </modules>
 
     <properties>

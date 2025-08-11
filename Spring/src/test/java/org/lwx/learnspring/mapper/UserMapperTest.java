@@ -24,6 +24,6 @@ public class UserMapperTest {
         UserDO userDO = userMapper.getUserById(1);
         System.out.println(userDO);
         Assert.assertNotNull(userDO);
-        Assert.assertEquals("lwx", userDO.getUsername());
+        Assert.assertEquals("org/lwx", userDO.getUsername());
     }
 }

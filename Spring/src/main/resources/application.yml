@@ -25,5 +25,7 @@ jwt:
 authorize:
   permit-urls:
     - "/login"
+    - "/hello"
+    - "/favicon.ico"
 
-logging.level.root: DEBUG
+logging.level.root: INFO
